@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="welcome.css" />
+</head>
+    <body>
+        <div id="loading">
+            <h1 class="title">Loading</h1>
+            <div class="rainbow-marker-loader"></div>
+        </div>
+        
+        <script>
+            let opacity=0; 
+            let intervalID=0; 
+            window.onload=fadeout; 
+                function fadeout(){ 
+                    setInterval(hide, 100); 
+                } 
+            function hide(){ 
+                let loading=document.getElementById("loading"); 
+                opacity = 
+            Number(window.getComputedStyle(loading).getPropertyValue("opacity")) 
+              
+                    if(opacity>0){ 
+                        opacity=opacity-0.01;
+                        loading.style.animationDelay=100; 
+                        loading.style.opacity=opacity 
+                    } 
+                    else{ 
+                        clearInterval(intervalID); 
+                        location.replace("todo.html");
+                    } 
+                } 
+        </script>
+    </body>
+</html>

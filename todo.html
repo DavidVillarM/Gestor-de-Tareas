@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+    <body>
+        <div class="form" id="tarea_form">
+            <div class="header">
+                <div class="header">Pendiente</div>
+                <button class="boton close-form">x</button>
+            </div>
+            <div class="body">
+                <label for="actividad">Actividad</label>
+                <input type="text" id="tarea_input" required/>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="tarea_date" required/>
+                <input type="submit" value="Agregar Actividad" id="tarea_submit" />
+            </div>
+        </div>
+        <div class="tarea_contenedor">
+            <div class="status" id="pendiente">
+                <h1 style="background-color:#008fee">Pendiente</h1>
+                <button id="add_boton" data-target-modal="#tarea_form">+ Agregar Actividad</button>
+            </div>
+            <div class="status" id="proceso">
+                <h1 style="background-color:#ffee00">En Proceso</h1>
+            </div>
+            <div class="status" id="completado">
+                <h1 style="background-color:#00bb38">Completado</h1>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
