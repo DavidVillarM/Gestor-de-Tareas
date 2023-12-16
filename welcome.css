@@ -1,7 +1,7 @@
 :root{
     
-    background-image: url("abstract-multi-colored-wave-pattern-shiny-flowing-modern-generated-by-ai.jpg");
-    background-size: cover;
+    /*background-image: url("abstract-multi-colored-wave-pattern-shiny-flowing-modern-generated-by-ai.jpg");
+    background-size: cover;*/
     
     /* animations constants */
     --steps: 10;
